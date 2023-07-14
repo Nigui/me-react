@@ -1,5 +1,3 @@
-const colors = require("tailwindcss/colors");
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -10,8 +8,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ...colors,
         deepblue: "#232339",
+      },
+      animation: {
+        "background-vertical-1": "translate 10s linear infinite",
+      },
+      keyframes: {
+        translate: {
+          "25%": { transform: "translateY(-25%)" },
+          "75%": { transform: "translateY(25%)" },
+          "0%, 50%, 100%": { transform: "translateY(0)" },
+        },
       },
     },
   },
