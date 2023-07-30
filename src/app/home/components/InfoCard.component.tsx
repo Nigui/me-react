@@ -25,7 +25,7 @@ export default function InfoCard() {
     {
       icon: <DocumentArrowDownIcon />,
       label: "Resume",
-      href: "https://nigui.fr/resume-1.1.0.pdf",
+      href: "/resume-2.0.0.pdf",
     },
     {
       icon: <EnvelopeIcon />,

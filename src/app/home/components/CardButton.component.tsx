@@ -33,6 +33,10 @@ export function CardButton(props: CardButtonProps) {
   ];
 
   return href
-    ? createElement("a", { ...sharedProps, href }, ...childrens)
+    ? createElement(
+        "a",
+        { ...sharedProps, href, target: "_blank", rel: "noopener noreferrer" },
+        ...childrens
+      )
     : createElement("button", { ...sharedProps, onClick }, ...childrens);
 }
