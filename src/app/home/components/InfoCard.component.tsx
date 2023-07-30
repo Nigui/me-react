@@ -67,6 +67,7 @@ export default function InfoCard() {
           className="rounded-full w-36 h-36"
           src={profilePic}
           alt="profile picture"
+          placeholder="blur"
         />
       </div>
     </div>
