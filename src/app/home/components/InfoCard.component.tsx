@@ -1,53 +1,74 @@
-import { GlassCard } from "@/app/components/GlassCard.component";
+"use client";
+
 import Image from "next/image";
-import { EnvelopeIcon } from "@heroicons/react/24/outline";
+import {
+  EnvelopeIcon,
+  DocumentArrowDownIcon,
+} from "@heroicons/react/24/outline";
 import { TwitterIcon } from "@/app/components/icons/TwitterIcon.component";
 import { GithubIcon } from "@/app/components/icons/GithubIcon.component";
 import profilePic from "@/app/assets/pp.jpg";
+import { CardButton, CardButtonProps } from "./CardButton.component";
 
 export default function InfoCard() {
-  const links = [
+  const actions: CardButtonProps[] = [
     {
-      Icon: EnvelopeIcon,
-      label: "contact@nigui.fr",
-    },
-    {
-      Icon: TwitterIcon,
+      icon: <TwitterIcon />,
       label: "GuillaumeN",
+      href: "https://twitter.com/GuiillaumeN",
     },
     {
-      Icon: GithubIcon,
+      icon: <GithubIcon />,
       label: "Nigui",
+      href: "https://github.com/Nigui",
+    },
+    {
+      icon: <DocumentArrowDownIcon />,
+      label: "Resume",
+      href: "https://nigui.fr/resume-1.1.0.pdf",
+    },
+    {
+      icon: <EnvelopeIcon />,
+      label: "contact me",
+      onClick: () => {
+        alert("contact me");
+      },
     },
   ];
   return (
-    <GlassCard>
-      <div className="flex flex-col gap-3 text-white">
-        <div className="flex items-center gap-4">
-          <Image
-            className="rounded-full w-24 h-24"
-            src={profilePic}
-            alt="profile picture"
-          />
-          <div className="text-center">
-            <div className="font-bold text-3xl">Guillaume Nicolas</div>
-            <div className="text-xl">Senior full-stack web developer</div>
-            <div>📍Nantes, FRANCE and remotely available</div>
-          </div>
-        </div>
-        <ul className="flex gap-5 justify-center opacity-70">
-          {links.map(({ Icon, label }, index) => {
-            return (
-              <li className="flex gap-1" key={`link-${index}`}>
-                <div className="rounded-full border border-current flex items-center justify-center w-6">
-                  <Icon className="w-3" />
-                </div>
-                {label}
-              </li>
-            );
-          })}
-        </ul>
+    <div className=" relative w-full sm:max-w-3xl sm:min-w-fit">
+      <div className="absolute inset-x-0 -top-20 md:inset-y-0 md:-left-20 flex justify-center md:justify-start md:items-center ">
+        <div className="bg-secondary rounded-full w-44 h-44" />
       </div>
-    </GlassCard>
+      <div className="bg-gradient-to-b md:bg-gradient-to-r from-lighter-40 text-lighter p-10 pt-28 md:p-10  rounded-xl bg-opacity-70 backdrop-filter backdrop-blur-md border-2 border-lighter-40">
+        <div className="flex flex-col gap-8 items-center justify-center">
+          <div className="text-center">
+            <h1 className="font-bold text-5xl">Guillaume NICOLAS</h1>
+            <div className="font-medium text-3xl">
+              Senior full-stack web developer
+            </div>
+            <div className="font-light text-xl">
+              📍Nantes, FRANCE and remotely available
+            </div>
+          </div>
+          <ul className="grid grid-cols-2 gap-4">
+            {actions.map((props, index) => {
+              return (
+                <li key={`action-${index}`}>
+                  <CardButton {...props} />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
+      <div className="absolute inset-x-0 -top-16 md:inset-y-0 md:-left-16 flex justify-center md:justify-start md:items-center pointer-events-none">
+        <Image
+          className="rounded-full w-36 h-36"
+          src={profilePic}
+          alt="profile picture"
+        />
+      </div>
+    </div>
   );
 }
