@@ -1,5 +1,3 @@
-import { PropsWithChildren } from "react";
-
 export function GithubIcon(props: any) {
   return (
     <svg
