@@ -2,6 +2,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
 import { Metadata } from "next";
+import Script from "next/script";
 
 const { title, description, url } = {
   title: "Nigui website",
@@ -34,6 +35,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          type="text/javascript"
+          src="https://try.abtasty.com/36ad5e4d1a4e0f94c06814a7a02d3c3f.js"
+        />
+      </head>
       <body>
         {children}
         <Analytics />
