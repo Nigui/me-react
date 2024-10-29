@@ -1,4 +1,6 @@
-export function TwitterIcon(props: any) {
+import { SVGProps } from "react";
+
+export function TwitterIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

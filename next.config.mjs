@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const config = {
   experimental: {
-    appDir: true,
     typedRoutes: false, // disable for now to use turbopack
   },
   images: {
@@ -16,4 +15,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+export default config;

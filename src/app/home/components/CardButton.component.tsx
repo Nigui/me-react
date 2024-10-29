@@ -1,7 +1,7 @@
 import { ReactElement, ReactNode, cloneElement, createElement } from "react";
 
 type CardButtonDefaultProps = {
-  icon: ReactElement<any>;
+  icon: ReactElement<Element>;
   label: string;
 };
 
