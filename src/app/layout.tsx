@@ -39,7 +39,7 @@ export default function RootLayout({
       <head>
         <Script
           type="text/javascript"
-          src="https://try.abtasty.com/36ad5e4d1a4e0f94c06814a7a02d3c3f.js"
+          src="https://customdomain-staging.abtasty.io/36ad5e4d1a4e0f94c06814a7a02d3c3f.js"
         />
       </head>
       <body>
