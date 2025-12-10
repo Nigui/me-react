@@ -2,12 +2,12 @@ import FlagshipService from "../components/Flagship";
 
 export function ABTestingPage() {
   return (
-    <div className="w-full bg-primary text-white flex flex-col">
+    <div className="w-screen h-screen bg-primary text-white flex flex-col">
       <FlagshipService />
       <h1 className="text-3xl text-center p-10 font-bold">
         Demo page to do some ABTesting
       </h1>
-      <iframe src="https://beta.nigui.fr/search" className="h-96" />
+      <iframe src="https://beta.nigui.fr/search" className="h-96 w-1/4" />
       <main>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus
