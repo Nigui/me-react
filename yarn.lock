@@ -3504,6 +3504,7 @@ __metadata:
     tailwindcss: "npm:3.4.14"
     typescript: "npm:^5.6.3"
     typescript-eslint: "npm:^8.13.0"
+    vwo-smartcode-nextjs: "npm:^1.4.2"
   languageName: unknown
   linkType: soft
 
@@ -5303,6 +5304,16 @@ __metadata:
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 10c0/41a5bdd214df2f6c3ecf8622745e4a366c4adced864bc3c833739791aeeeb1838119af7daed4ba36428114b5c67dcda034a79c882e97e43c03e66a4dd7389942
+  languageName: node
+  linkType: hard
+
+"vwo-smartcode-nextjs@npm:^1.4.2":
+  version: 1.4.2
+  resolution: "vwo-smartcode-nextjs@npm:1.4.2"
+  peerDependencies:
+    next: ">=9.0.0"
+    react: ">=16.8.0"
+  checksum: 10c0/f1bcecb0a0065511c5e49f3f78af2704095fcb8e292079aa674b62a38d8b7d7b8298948b79feb2f922ac12ab527368fd63c4c6e189a8045429fc632c7cd0195e
   languageName: node
   linkType: hard
 

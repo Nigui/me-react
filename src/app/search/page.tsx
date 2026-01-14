@@ -13,7 +13,7 @@ export default function SearchPage() {
             Search
           </div>
         </div>
-        <iframe src="https://beta.nigui.fr/random" className="flex-grow" />
+        <iframe src="https://www.nigui.fr/random" className="flex-grow" />
       </main>
     </div>
   );

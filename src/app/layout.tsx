@@ -7,7 +7,7 @@ import { Metadata } from "next";
 const { title, description, url } = {
   title: "Nigui website",
   description: "Handcrafted to introduce myself",
-  url: "https://beta.nigui.fr",
+  url: "https://www.nigui.fr",
 };
 
 export const metadata: Metadata = {

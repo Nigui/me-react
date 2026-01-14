@@ -17,7 +17,8 @@
     "next": "^15.0.2",
     "react": "^19.0.0-rc-0bc30748-20241028",
     "react-dom": "^19.0.0-rc-0bc30748-20241028",
-    "tailwindcss": "3.4.14"
+    "tailwindcss": "3.4.14",
+    "vwo-smartcode-nextjs": "^1.4.2"
   },
   "devDependencies": {
     "@eslint/compat": "^1.2.2",
