@@ -25,14 +25,12 @@ export default function InfoCard() {
     {
       icon: <DocumentArrowDownIcon />,
       label: "Resume",
-      href: "/resume-2.0.0.pdf",
+      href: "/resume.v3.low.pdf",
     },
     {
       icon: <EnvelopeIcon />,
       label: "contact me",
-      onClick: () => {
-        alert("contact me");
-      },
+      href: "mailto:contact@nigui.fr",
     },
   ];
   return (
