@@ -1,6 +1,5 @@
 import Script from "next/script";
 import { ABTestingPage } from "./ABTestPage";
-import FlagshipService from "../components/Flagship";
 
 export default async function Page() {
   return (
